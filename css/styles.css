@@ -164,6 +164,7 @@ cursor {
   border-radius: 4px;
   margin-top: 4px;
   border: 1px solid #4d5ae5;
+  margin-bottom: 8px;
 }
 .tel {
   width: 360px;
@@ -172,8 +173,9 @@ cursor {
   top: 84px;
   background: #fcfcfc;
   border-radius: 4px;
-  opacity: 0.2;
   border: 1px solid #2e2f42;
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 .email {
   width: 360px;
@@ -183,15 +185,14 @@ cursor {
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  opacity: 0.2;
   border: 1px solid #2e2f42;
+  margin-bottom: 8px;
 }
 .comment {
   width: 360px;
   height: 120px;
   left: 0px;
   top: 216px;
-  opacity: 0.2;
   border: 1px solid #2e2f42;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -262,19 +263,10 @@ cursor {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-}
-.send-text {
-  width: 105px;
-  height: 24px;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
   border: none;
   margin-top: 24px;
@@ -295,11 +287,11 @@ cursor {
   height: 120px;
   left: 0px;
   top: 216px;
-  opacity: 0.2;
   border: 1px solid #2e2f42;
   border-radius: 4px;
   padding-top: 8px;
   padding-left: 16px;
+  margin-top: 4px;
 }
 .form-comment::placeholder {
   font-family: "Roboto";
@@ -308,7 +300,6 @@ cursor {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  
 }
 .address {
   margin-left: auto;
@@ -795,4 +786,57 @@ header .conteanir {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
+}
+.subscribe-media {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.subscribe-link-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  margin-top: 16px;
+}
+.button-subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  left: 77.5%;
+  right: 11.04%;
+  top: 44.87%;
+  bottom: 42.31%;
+  background: #4d5ae5;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: none;
+}
+.subscribe-icon-footer {
+fill: #ffffff;
+}
+.email-footer {
+background: #2E2F42;
+left: 57.5%;
+right: 24.17%;
+top: 44.87%;
+bottom: 42.31%;
+border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
 }
