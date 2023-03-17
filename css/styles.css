@@ -44,6 +44,10 @@ cursor {
   background: #404bbf;
   border-color: #404bbf;
 }
+.button-subscribe:hover,
+.button-subscribe:focus{
+  background: #4d5ae5;
+}
 .professions {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -78,6 +82,22 @@ cursor {
 }
 .professional-social-link:hover {
   background-color: var(--ocean);
+}
+.name:focus {
+  border: 1px solid #4D5AE5;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name:focus + .modal-img-icon {
+  fill: #4D5AE5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:hover,
+.button-send:focus{
+background: var(--iris);
 }
 .link-current::after {
   content: "";
@@ -165,6 +185,7 @@ cursor {
   margin-top: 4px;
   border: 1px solid #4d5ae5;
   margin-bottom: 8px;
+  text-indent: 38px;
 }
 .tel {
   width: 360px;
@@ -176,6 +197,7 @@ cursor {
   border: 1px solid #2e2f42;
   margin-bottom: 8px;
   margin-top: 4px;
+  text-indent: 38px;
 }
 .email {
   width: 360px;
@@ -187,6 +209,7 @@ cursor {
   margin-top: 4px;
   border: 1px solid #2e2f42;
   margin-bottom: 8px;
+  text-indent: 38px;
 }
 .comment {
   width: 360px;
@@ -259,7 +282,7 @@ cursor {
   gap: 10px;
   width: 169px;
   height: 56px;
-  background: #4d5ae5;
+  background: var(--ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -270,6 +293,7 @@ cursor {
   color: #ffffff;
   border: none;
   margin-top: 24px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-img-icon {
   display: flex;
@@ -788,6 +812,8 @@ header .conteanir {
   color: #ffffff;
 }
 .subscribe-media {
+  display: flex;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -805,38 +831,39 @@ header .conteanir {
   margin-top: 16px;
 }
 .button-subscribe {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 8px 24px;
-  gap: 16px;
-  left: 77.5%;
-  right: 11.04%;
-  top: 44.87%;
-  bottom: 42.31%;
-  background: #4d5ae5;
+  margin-left: 24px;
+  background: var(--ocean);
   border-radius: 4px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 24px;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   border: none;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-icon-footer {
 fill: #ffffff;
 }
 .email-footer {
 background: #2E2F42;
-left: 57.5%;
-right: 24.17%;
-top: 44.87%;
-bottom: 42.31%;
 border: 1px solid #FFFFFF;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
+margin-top: 16px;
+padding: 8px;
+}
+.email-footer::placeholder{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 24px;
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
 }
