@@ -186,6 +186,8 @@ background: var(--iris);
   border: 1px solid #4d5ae5;
   margin-bottom: 8px;
   text-indent: 38px;
+  border: 1px solid #4D5AE5;
+border-radius: 4px;
 }
 .tel {
   width: 360px;
@@ -198,6 +200,9 @@ background: var(--iris);
   margin-bottom: 8px;
   margin-top: 4px;
   text-indent: 38px;
+  border: 1px solid #2E2F42;
+border-radius: 4px;
+opacity: 0.2;
 }
 .email {
   width: 360px;
@@ -210,6 +215,9 @@ background: var(--iris);
   border: 1px solid #2e2f42;
   margin-bottom: 8px;
   text-indent: 38px;
+  opacity: 0.2;
+border: 1px solid #2E2F42;
+border-radius: 4px;
 }
 .comment {
   width: 360px;
@@ -261,6 +269,17 @@ background: var(--iris);
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.form-polisy-link{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.04em;
+flex: none;
+order: 1;
+flex-grow: 0;
 }
 .checkbox {
   box-sizing: border-box;
@@ -316,14 +335,18 @@ background: var(--iris);
   padding-top: 8px;
   padding-left: 16px;
   margin-top: 4px;
+  opacity: 0.2;
+
 }
 .form-comment::placeholder {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.04em;
+/* color: rgba(46, 47, 66, 0.4); */
+opacity: -1;
 }
 .address {
   margin-left: auto;
@@ -406,6 +429,7 @@ background: var(--iris);
   height: 112px;
   background: #f4f4fd;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 .social-icon-antenna {
   width: 64px;
@@ -658,6 +682,21 @@ header .conteanir {
   line-height: 1.33;
   color: var(--navyblue);
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.list-text-studio-heder{
+  position: relative;
+  padding: 24px 0;
+  display: inline-block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--ocean);
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-text-studio {
   font-weight: 400;
@@ -665,6 +704,7 @@ header .conteanir {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--slate);
+  
 }
 .list-title {
   font-family: "Roboto";
@@ -772,7 +812,7 @@ header .conteanir {
 .footer-conteanir {
   display: flex;
   width: 1158px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin: 0 auto;
   color: var(--white);
   gap: 120px;
@@ -821,6 +861,7 @@ header .conteanir {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 .subscribe-link-footer {
   display: flex;
@@ -845,6 +886,10 @@ header .conteanir {
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-footer{
+  display: flex;
+  justify-content: center;
+}
 .subscribe-icon-footer {
 fill: #ffffff;
 }
@@ -853,8 +898,8 @@ background: #2E2F42;
 border: 1px solid #FFFFFF;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
-margin-top: 16px;
-padding: 8px;
+width: 264px;
+height:40px;
 }
 .email-footer::placeholder{
 font-family: 'Roboto';
@@ -867,3 +912,4 @@ align-items: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
 }
+
