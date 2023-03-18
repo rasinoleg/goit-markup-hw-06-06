@@ -183,7 +183,7 @@ background: var(--iris);
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  border: 1px solid #4d5ae5;
+  border: 1gba(46, 47, 66, 0.2);
   margin-bottom: 8px;
   text-indent: 38px;
 }
@@ -192,11 +192,10 @@ background: var(--iris);
   height: 40px;
   background: #fcfcfc;
   border-radius: 4px;
-  border: 1px solid #2e2f42;
+  border: 1gba(46, 47, 66, 0.2);
   margin-bottom: 8px;
   margin-top: 4px;
   text-indent: 38px;
-opacity: 0.2;
 }
 .email {
   width: 360px;
@@ -204,17 +203,16 @@ opacity: 0.2;
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  border: 1px solid #2e2f42;
+  border: 1gba(46, 47, 66, 0.2);
   margin-bottom: 8px;
   text-indent: 38px;
-  opacity: 0.2;
 }
 .comment {
   width: 360px;
   height: 120px;
   left: 0px;
   top: 216px;
-  border: 1px solid #2e2f42;
+  border: 1gba(46, 47, 66, 0.2);
   border-radius: 4px;
   margin-bottom: 16px;
  
@@ -317,13 +315,11 @@ flex-grow: 0;
   justify-content: center;
   width: 360px;
   height: 120px;
-  border: 1px solid #2e2f42;
+  border: 1gba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding-top: 8px;
   padding-left: 16px;
   margin-top: 4px;
-  opacity: 0.2;
-
 }
 .form-comment::placeholder {
   font-family: 'Roboto';
