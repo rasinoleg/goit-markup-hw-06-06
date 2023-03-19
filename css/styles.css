@@ -88,12 +88,49 @@ cursor {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .name:focus + .modal-img-icon {
   fill: #4d5ae5;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.tel:focus {
+  border: 1px solid #4d5ae5;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.tel:focus + .modal-img-icon {
+  fill: #4d5ae5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.email:focus {
+  border: 1px solid #4d5ae5;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.email:focus + .modal-img-icon {
+  fill: #4d5ae5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.form-comment:focus {
+  border: 1px solid #4d5ae5;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .button-send:hover,
 .button-send:focus {
@@ -185,8 +222,7 @@ cursor {
   margin-top: 4px;
   margin-bottom: 8px;
   text-indent: 38px;
-  border: rgba(77, 90, 229, 1);
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(46, 47, 66, 0.2);
 }
 .tel {
   width: 360px;
@@ -197,7 +233,7 @@ cursor {
   margin-bottom: 8px;
   margin-top: 4px;
   text-indent: 38px;
- 
+  border: 1px solid rgba(46, 47, 66, 0.2);
 }
 .email {
   width: 360px;
@@ -208,6 +244,7 @@ cursor {
   border: 1px solid #2e2f42;
   margin-bottom: 8px;
   text-indent: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
 }
 .comment {
   width: 360px;
@@ -217,6 +254,7 @@ cursor {
   border: 1px solid #2e2f42;
   border-radius: 4px;
   margin-bottom: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
 }
 .modal-text {
   font-family: "Roboto";
@@ -246,33 +284,34 @@ cursor {
   padding-top: 24px;
   padding-bottom: 34px;
 }
-.text-checkbox {
-  margin-left: 8px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-.form-polisy-link {
-  width: 338px;
-  height: 16px;
-}
-.checkbox {
-  box-sizing: border-box;
+.modal-form-custom-checkbox{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
-  border-radius: 2px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid var(--navyblue);
   margin-top: 16px;
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox{
+background: #404BBF;
+border: 1px solid #404BBF;
+border-radius: 2px;
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox .modal-form-checkbox-icon{
+  opacity: 1;
+  fill: var(--iris);
+}
+.modal-form-option-span{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.04em;
+color: #8E8F99;
 }
 .button-send {
   display: flex;
@@ -310,11 +349,12 @@ cursor {
   justify-content: center;
   width: 360px;
   height: 120px;
-  border: 1gba (46, 47, 66, 0.2);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   padding-top: 8px;
   padding-left: 16px;
   margin-top: 4px;
+  resize: none
 }
 .form-comment::placeholder {
   font-family: "Roboto";

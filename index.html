@@ -35,7 +35,9 @@
           >
           <ul class="site-nav-link list-markers">
             <li>
-              <a href="index.html" class="list-text-studio-heder link-current">Studio</a>
+              <a href="index.html" class="list-text-studio-heder link-current"
+                >Studio</a
+              >
             </li>
             <li><a href="portfolio.html" class="list-text">Portfolio</a></li>
             <li><a href="portfolio.html" class="list-text">Contacts</a></li>
@@ -124,15 +126,28 @@
                     ></textarea>
                   </label>
                 </div>
-                <input
-                  class="checkbox"
-                  type="checkbox"
-                  name="polisi"
-                  id="polisi"
-                />
-                <label for="polisi"class="text-checkbox"
-                  >I accept the terms and conditions of the
-                  <a class="form-polisy-link" href="">Privacy Policy</a>
+                <label class="modal-form-option-label">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    value="acept-policy"
+                    class="modal-form-checkbox visually-hidden"
+                  />
+                  <span class="modal-form-custom-checkbox">
+                    <svg
+                      class="modal-form-checkbox-icon"
+                      width="10"
+                      height="8"
+                    >
+                      <use
+                        href="./css/icons.svg/symbol-defs-7.svg#icon-Vector-8-2"
+                      ></use>
+                    </svg>
+                  </span>
+                  <span class="modal-form-option-span"
+                    >I accept the terms and conditions of the
+                    <a class="modal-for-link" href="">Privacy Policy</a></span
+                  >
                 </label>
                 <button class="button-send" type="submit">Send</button>
               </form>
