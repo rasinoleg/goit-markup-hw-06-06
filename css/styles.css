@@ -45,7 +45,7 @@ cursor {
   border-color: #404bbf;
 }
 .button-subscribe:hover,
-.button-subscribe:focus{
+.button-subscribe:focus {
   background: #4d5ae5;
 }
 .professions {
@@ -84,20 +84,20 @@ cursor {
   background-color: var(--ocean);
 }
 .name:focus {
-  border: 1px solid #4D5AE5;
+  border: 1px solid #4d5ae5;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name:focus + .modal-img-icon {
-  fill: #4D5AE5;
+  fill: #4d5ae5;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-send:hover,
-.button-send:focus{
-background: var(--iris);
+.button-send:focus {
+  background: var(--iris);
 }
 .link-current::after {
   content: "";
@@ -183,16 +183,17 @@ background: var(--iris);
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  border: 1gba(46, 47, 66, 0.2);
   margin-bottom: 8px;
   text-indent: 38px;
+  border: rgba(77, 90, 229, 1);
+  border: 1px solid #4d5ae5;
 }
 .tel {
   width: 360px;
   height: 40px;
   background: #fcfcfc;
   border-radius: 4px;
-  border: 1gba(46, 47, 66, 0.2);
+  border: 1px solid #2e2f42;
   margin-bottom: 8px;
   margin-top: 4px;
   text-indent: 38px;
@@ -203,7 +204,7 @@ background: var(--iris);
   background: #fcfcfc;
   border-radius: 4px;
   margin-top: 4px;
-  border: 1gba(46, 47, 66, 0.2);
+  border: 1px solid #2e2f42;
   margin-bottom: 8px;
   text-indent: 38px;
 }
@@ -212,10 +213,9 @@ background: var(--iris);
   height: 120px;
   left: 0px;
   top: 216px;
-  border: 1gba(46, 47, 66, 0.2);
+  border: 1px solid #2e2f42;
   border-radius: 4px;
   margin-bottom: 16px;
- 
 }
 .modal-text {
   font-family: "Roboto";
@@ -257,16 +257,9 @@ background: var(--iris);
   order: 1;
   flex-grow: 0;
 }
-.form-polisy-link{
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.04em;
-flex: none;
-order: 1;
-flex-grow: 0;
+.form-polisy-link {
+  width: 338px;
+  height: 16px;
 }
 .checkbox {
   box-sizing: border-box;
@@ -315,21 +308,21 @@ flex-grow: 0;
   justify-content: center;
   width: 360px;
   height: 120px;
-  border: 1gba(46, 47, 66, 0.2);
+  border: 1gba (46, 47, 66, 0.2);
   border-radius: 4px;
   padding-top: 8px;
   padding-left: 16px;
   margin-top: 4px;
 }
 .form-comment::placeholder {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-letter-spacing: 0.04em;
-color: rgba(46, 47, 66, 0.4);
-opacity: 20;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  opacity: 20;
 }
 .address {
   margin-left: auto;
@@ -667,7 +660,7 @@ header .conteanir {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.list-text-studio-heder{
+.list-text-studio-heder {
   position: relative;
   padding: 24px 0;
   display: inline-block;
@@ -687,7 +680,6 @@ header .conteanir {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--slate);
-  
 }
 .list-title {
   font-family: "Roboto";
@@ -792,10 +784,10 @@ header .conteanir {
   color: var(--iris);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-conteanir {
+.footer-box-one {
   display: flex;
   width: 1158px;
-  /* padding: 0 15px; */
+  padding: 0 15px;
   margin: 0 auto;
   color: var(--white);
   gap: 120px;
@@ -869,32 +861,31 @@ header .conteanir {
   cursor: pointer;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-footer{
+.form-footer {
   display: flex;
   justify-content: center;
 }
 .subscribe-icon-footer {
-fill: #ffffff;
+  fill: #ffffff;
 }
 .email-footer {
-background: #2E2F42;
-border: 1px solid #FFFFFF;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-width: 264px;
-height:40px;
-padding-left: 16px;
-color: var(--white);
+  background: #2e2f42;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 235px;
+  height: 40px;
+  padding-left: 16px;
+  color: var(--white);
 }
-.email-footer::placeholder{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 24px;
-display: flex;
-align-items: center;
-letter-spacing: 0.04em;
-color: #FFFFFF;
+.email-footer::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
-
